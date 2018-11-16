@@ -147,9 +147,9 @@ public class Client {
 		if(result)
 		{
 			System.out.println("\n\n\t\tCongratulations Customer account has been created successfully...!!!");
-			System.out.println("\t\tYour Accound ID is :\t\t");
+			System.out.print("\t\tYour Accound ID is :\t\t");
 			System.out.println(accountBean.getAccountId());
-			System.out.println("\t\tAccount created at \n\n"+accDateInput);
+			System.out.println("\t\tAccount created at "+accDateInput);
 			
 	
 		}

@@ -3,6 +3,7 @@ package com.capg.paymentwallet.dao;
 import javax.persistence.EntityManager;
 
 import com.capg.paymentwallet.bean.AccountBean;
+import com.capg.paymentwallet.exception.CustomerException;
 
 public class AccountDAOImpl implements IAccountDao {
 
@@ -10,7 +11,7 @@ public class AccountDAOImpl implements IAccountDao {
 	EntityManager em;
 	
 	@Override
-	public boolean createAccount(AccountBean accountBean) throws Exception {
+	public boolean createAccount(AccountBean accountBean) throws CustomerException {
 		try{
 			
 			this.em=JPAManager.createEntityManager();
